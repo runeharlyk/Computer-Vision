@@ -18,6 +18,7 @@ Parameters:
 * feature - A number representing a color channel in rgb. Eg. 0=red 
 * sentivity - A number between 1-255 to determing which pixel to extra input-picture
 * noiseReduction - How much information to throw away. Default is 30. If given, this should be a single integer or floating point value between 0-255.
+
 Returns:	
 *Url to ouput image*
 
