@@ -24,11 +24,17 @@ Parameters:
 Returns:	
 *Url to ouput image*
 
+## Example
+![input-picture](https://github.com/runeharlyk/Computer-Vision/blob/master/Color-Extraction/test.jpg)
+![output-picture](https://github.com/runeharlyk/Computer-Vision/blob/master/Color-Extraction/demo.jpg)
+
+
 ## Build With
 * [PIL](http://www.pythonware.com/products/pil/)
 
 ## Authors
 1. **Rune Harlyk** - *Initial work*
+
 See also the list of contributors who participated in this project.
 
 ## License
