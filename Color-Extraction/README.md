@@ -6,7 +6,7 @@ Start by downloading this project, either as .ZIP or with through *desktop*.
 If downloaded as zip, you should just be able to unzip it and run the demo - *demo.py*
 
 ## Instaling
-With python 3.x installed everything should be ready run.
+With python 3.x installed everything should be ready to run.
 
 ## Usage
 ```python
