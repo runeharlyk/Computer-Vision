@@ -1,10 +1,12 @@
 # Color Extraction
+This project is a way, my way, into computer vision. It can be use to isolate objects in an image.
 
 ## Getting Started
-
-## Prerequisites
+Start by downloading this project, either as .ZIP or with through *desktop*.
+If downloaded as zip, you should just be able to unzip it and run the demo - *demo.py*
 
 ## Instaling
+With python 3.x installed everything should be ready run.
 
 ## Usage
 ```python
@@ -22,5 +24,12 @@ Parameters:
 Returns:	
 *Url to ouput image*
 
-Build With
+## Build With
 * PIL
+
+## Authors
+1. **Rune Harlyk** - *Initial work*
+See also the list of contributors who participated in this project.
+
+## License
+This project is licensed under the GNU License - see the /LICENSE.md file for details
