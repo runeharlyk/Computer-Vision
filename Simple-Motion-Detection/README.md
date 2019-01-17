@@ -12,12 +12,12 @@ With python 3.x installed, on raspbian, everything should be ready to run.
 ```python
 MD.Motion.Check(baseImage, newImage, sentivity, shouldDraw = False
 ```
-Check if there is movement between two images. It uses the baseImage to check what different between the picture.
+Check if there is movement between two images. It uses the baseImage to check what different between the pictures.
 
 Parameters:
 * baseImage -  A location to input/base picture, either relative or absolute.
-* newImage -  A free location to write the extracted color channel to.
-* sentivity - A number between 0-255 to deturning which pixel to mark as changes.
+* newImage -  A location to newest picture, either relative or absolute.
+* sentivity - A number between 0-255 to determine which pixel to be mark as changed.
 * shouldDraw - Tells the program if it should make a copy of the baseImage and draw out the difference. Default is false. If given, this should be a boolean. It can be traumatically turn up "check" time, so keep that in mind.
 
 Returns:	
