@@ -26,9 +26,12 @@ class Extraction:
 		self.sentivity = sentivity
 		self.outputPicture = outputpicture
 		self.noiseReduction = noiseReduction
+		self.otherColors =  [1, 2] if self.feature == 0  else [0, 2] if self.feature == 1 else [0, 1]
 		for W in range(self.pictureWidth):
 			for H in range(self.pictureHeight):
-				if self.inputPicture[W, H][self.feature] > self.sentivity and abs(self.inputPicture[W, H][self.feature]- self.inputPicture[W, H][self.feature+1] > self.noiseReduction):
+				otherColor1 = abs(self.inputPicture[W, H][self.feature]- self.inputPicture[W, H][self.otherColors[0]]
+				otherColor2 = abs(self.inputPicture[W, H][self.feature]- self.inputPicture[W, H][self.otherColors[1]]
+				if self.inputPicture[W, H][self.feature] > self.sentivity and otherColor1 > self.noiseReduction and otherColor2 > self.noiseReduction):
 					self.DrawingImage_PixelAccess [W, H] = (255)
 				else:
 					self.DrawingImage_PixelAccess [W, H] = (0)
