@@ -6,20 +6,19 @@ Start by downloading this project, either as .ZIP or with through *desktop*.
 If downloaded as zip, you should just be able to unzip it and run the demo - *demo.py*
 
 ## Instaling
-With python 3.x installed everything should be ready to run.
+With python 3.x installed, on raspbian, everything should be ready to run.
 
 ## Usage
 ```python
-CE.Extraction.Extract(input-picture, output-picture, feature, sentivity, noiseReduction=30)
+MD.Motion.Check(baseImage, newImage, sentivity, shouldDraw = False
 ```
-Extracts color-feature from input-picture and draw them on output-picture using given sentivity and noiseReduction.
+Check if there is movement between two images. It uses the baseImage to check what different between the picture.
 
 Parameters:
-* input-picture -  A location to input/base picture, either relative or absolute.
-* output-picture -  A free location to write the extracted color channel to.
-* feature - A number representing a color channel in rgb. Eg. 0=red. 
-* sentivity - A number between 1-255 to determing which pixel to extract to input-picture.
-* noiseReduction - How much information to throw away. Default is 30. If given, this should be a single integer or floating point value between 0-255.
+* baseImage -  A location to input/base picture, either relative or absolute.
+* newImage -  A free location to write the extracted color channel to.
+* sentivity - A number representing a color channel in rgb. Eg. 0=red. 
+* shouldDraw - Tells the program if it should make a copy of the base and draw out the difference. Default is false. If given, this should be a boolean. It can vi very for a
 
 Returns:	
 *Url to ouput image*
