@@ -17,16 +17,11 @@ Check if there is movement between two images. It uses the baseImage to check wh
 Parameters:
 * baseImage -  A location to input/base picture, either relative or absolute.
 * newImage -  A free location to write the extracted color channel to.
-* sentivity - A number representing a color channel in rgb. Eg. 0=red. 
-* shouldDraw - Tells the program if it should make a copy of the base and draw out the difference. Default is false. If given, this should be a boolean. It can vi very for a
+* sentivity - A number between 0-255 to deturning which pixel to mark as changes.
+* shouldDraw - Tells the program if it should make a copy of the baseImage and draw out the difference. Default is false. If given, this should be a boolean. It can be traumatically turn up "check" time, so keep that in mind.
 
 Returns:	
-*Url to ouput image*
-
-## Example
-![input-picture](https://github.com/runeharlyk/Computer-Vision/blob/master/Color-Extraction/test.jpg)
-![output-picture](https://github.com/runeharlyk/Computer-Vision/blob/master/Color-Extraction/demo.jpg)
-
+*url or false* (It can be used as a boolean)
 
 ## Build With
 * [PIL](http://www.pythonware.com/products/pil/)
