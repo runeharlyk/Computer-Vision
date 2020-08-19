@@ -10,7 +10,7 @@ With python 3.x installed, on raspbian, everything should be ready to run.
 
 ## Usage
 ```python
-MD.Motion.Check(baseImage, newImage, sentivity, shouldDraw = False
+MD.Motion.Check(baseImage, newImage, sentivity, shouldDraw = False)
 ```
 Check if there is movement between two images. It uses the baseImage to check what different between the pictures.
 
